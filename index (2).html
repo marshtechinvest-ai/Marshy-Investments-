@@ -75,19 +75,19 @@ const { useState, useRef, useEffect, useCallback, useMemo, memo } = React;
 
 const BIKES = [
   { id:1,  cat:"Kids",    name:"Tricycle",                 desc:"Perfect for toddlers. Sturdy frame, storage basket.",                  price:"$25",     tag:"Toddler",    img:"" },
-  { id:2,  cat:"Kids",    name:'12" Kids Bicycle',         desc:"Age group 2–5 yrs. Training wheels included.",                        price:"$45–$50", tag:"Starter",    img:"https://github.com/marshtechinvest-ai/Marshy-Investments-/blob/main/images/kids-bike-2.jpg" },
-  { id:3,  cat:"Kids",    name:'16" Kids Bicycle',         desc:"Age group 4–8 yrs. Multiple colours. Basket & rear carrier.",          price:"$50–$65", tag:"Popular",    img:"https://github.com/marshtechinvest-ai/Marshy-Investments-/blob/main/images/kids-bike-3.jpg" },
-  { id:4,  cat:"Kids",    name:'20" Kids Bicycle',         desc:"Age group 6–11 yrs. Basket, carrier, training wheels available.",      price:"$60–$85", tag:"Best Seller",img:"https://github.com/marshtechinvest-ai/Marshy-Investments-/blob/main/images/kids-bike-4.jpg" },
+  { id:2,  cat:"Kids",    name:'12" Kids Bicycle',         desc:"Age group 2–5 yrs. Training wheels included.",                        price:"$45–$50", tag:"Starter",    img:"images/kids-bike-2.jpg" },
+  { id:3,  cat:"Kids",    name:'16" Kids Bicycle',         desc:"Age group 4–8 yrs. Multiple colours. Basket & rear carrier.",          price:"$50–$65", tag:"Popular",    img:"images/kids-bike-3.jpg" },
+  { id:4,  cat:"Kids",    name:'20" Kids Bicycle',         desc:"Age group 6–11 yrs. Basket, carrier, training wheels available.",      price:"$60–$85", tag:"Best Seller",img:"images/kids-bike-4.jpg" },
   { id:5,  cat:"Kids",    name:'20" TJX Balloon Tyre',     desc:"Age group 6–13 yrs. Disc brakes, fat balloon tyres.",                 price:"$90",     tag:"Cool",       img:"" },
-  { id:6,  cat:"Kids",    name:'20" BMX Bike',             desc:"Age group 6–adults. Built for fun, tricks & street riding.",          price:"$90",     tag:"Fun",        img:"https://github.com/marshtechinvest-ai/Marshy-Investments-/blob/main/images/kids-bike-6.jpg" },
+  { id:6,  cat:"Kids",    name:'20" BMX Bike',             desc:"Age group 6–adults. Built for fun, tricks & street riding.",          price:"$90",     tag:"Fun",        img:"images/kids-bike-6.jpg" },
   { id:7,  cat:"Adult",   name:'26" MTB (Entry)',          desc:"Solid mountain bike. Great value for Harare commuters.",              price:"$80",     tag:"Value",      img:"" },
   { id:8,  cat:"Adult",   name:'26" MTB with Carrier',     desc:"Strong rear carrier. Shimano gears. Perfect for daily use.",          price:"$85–$90", tag:"Commuter",   img:"" },
   { id:9,  cat:"Adult",   name:'26" MTB Shimano $100',     desc:"Full Shimano drivetrain. Disc brakes. Sport geometry.",               price:"$100",    tag:"Shimano",    img:"" },
   { id:10, cat:"Adult",   name:'26" MTB Shimano $130',     desc:"Premium Shimano MTB. Full suspension fork. Top spec.",                price:"$130",    tag:"Premium",    img:"" },
   { id:11, cat:"Adult",   name:"Buffalo Type (Macce)",     desc:"Classic upright city bike. Tough, reliable, timeless.",              price:"$120",    tag:"City",       img:"" },
-  { id:12, cat:"Folding", name:'26" Folding Shimano',      desc:"Folds compact. Shimano gears. Easy to store & transport.",           price:"$120",    tag:"Foldable",   img:"https://github.com/marshtechinvest-ai/Marshy-Investments-/blob/main/images/folding-bike-12.jpg" },
-  { id:13, cat:"Folding", name:'26" Folding Double Shock', desc:"Full suspension folding bike. Double shock absorbers. Smooth ride.", price:"$130",    tag:"Suspension", img:"https://github.com/marshtechinvest-ai/Marshy-Investments-/blob/main/images/folding-bike-13.jpg" },
-  { id:14, cat:"Folding", name:'26" Folding Meg Wheel',    desc:"Premium mag wheels. Full suspension. Top of the range.",             price:"$160",    tag:"Top Range",  img:"https://github.com/marshtechinvest-ai/Marshy-Investments-/blob/main/images/folding-bike-14.jpg" },
+  { id:12, cat:"Folding", name:'26" Folding Shimano',      desc:"Folds compact. Shimano gears. Easy to store & transport.",           price:"$120",    tag:"Foldable",   img:"images/folding-bike-12.jpg" },
+  { id:13, cat:"Folding", name:'26" Folding Double Shock', desc:"Full suspension folding bike. Double shock absorbers. Smooth ride.", price:"$130",    tag:"Suspension", img:"images/folding-bike-13.jpg" },
+  { id:14, cat:"Folding", name:'26" Folding Meg Wheel',    desc:"Premium mag wheels. Full suspension. Top of the range.",             price:"$160",    tag:"Top Range",  img:"images/folding-bike-14.jpg" },
 ];
 
 const SPARES = [
